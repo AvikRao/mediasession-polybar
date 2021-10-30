@@ -1,14 +1,12 @@
-const colors = require("colors");
-
 const ws = require("ws");
 const wss = new ws.WebSocketServer({ port: 3033 });
 
 let data;
 
-console.log("Started YTM Connector Client.");
+console.log("Started MediaSession connection server.");
 wss.on('connection', (connection) => {
 
-    console.log("Connected to YouTube Music instance.");
+    console.log("Connected to MediaSession instance.");
     connection.on('message', (message) => {
         data = JSON.parse(message);
         let playing = data.status == "playing";

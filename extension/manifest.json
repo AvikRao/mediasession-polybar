@@ -1,10 +1,10 @@
 {
 
     "manifest_version": 2,
-    "name": "ytmconnector",
-    "version": "1.0",
+    "name": "mediasession-polybar",
+    "version": "1.1",
   
-    "description": "Connects to mpd (Music Player Daemon) and displays YouTube Music data",
+    "description": "Grabs MediaSession metadata and sends it to a WebSocket Server hosted on the client.",
   
     "background": {
         "scripts": ["background.js"]
@@ -19,7 +19,7 @@
 
     "browser_specific_settings": {
         "gecko": {
-            "id": "ytmconnector@avikrao.github.com"
+            "id": "mediasession.polybar@avikrao.github.com"
         }
     }
       
