@@ -1,0 +1,27 @@
+{
+
+    "manifest_version": 2,
+    "name": "ytmconnector",
+    "version": "1.0",
+  
+    "description": "Connects to mpd (Music Player Daemon) and displays YouTube Music data",
+  
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "ytmconnector@avikrao.github.com"
+        }
+    }
+      
+  
+}
